@@ -37,6 +37,7 @@ public class Main extends Activity implements View.OnClickListener{
             case R.id.imageView:
                 Intent imageIntent = new Intent(this, imagePick.class);
                 startActivity(imageIntent);
+                break;
             default:
                 break;
         }
