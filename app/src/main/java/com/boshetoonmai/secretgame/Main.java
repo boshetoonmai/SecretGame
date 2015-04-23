@@ -9,6 +9,7 @@ import android.widget.Button;
 public class Main extends Activity implements View.OnClickListener{
 
     Button bitmap_activity;
+    Button imagepick_activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +18,15 @@ public class Main extends Activity implements View.OnClickListener{
 
         bitmap_activity = (Button) findViewById(R.id.bitmap_btn);
         bitmap_activity.setOnClickListener(this);
+
+        imagepick_activity = (Button) findViewById(R.id.imageView);
+        imagepick_activity.setOnClickListener(this);
     }
 
-    /**
-     *
-     * Tut sozdavay onClick event handlery dlya svoey knopki.
-     *
-     * **/
+
+
+
+
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -31,6 +34,9 @@ public class Main extends Activity implements View.OnClickListener{
                 Intent bitmapIntent = new Intent(this, BitmapActivity.class);
                 startActivity(bitmapIntent);
                 break;
+            case R.id.imageView:
+                Intent imageIntent = new Intent(this, imagePick.class);
+                startActivity(imageIntent);
             default:
                 break;
         }

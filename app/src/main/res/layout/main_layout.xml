@@ -13,8 +13,8 @@
         android:layout_height="100dp"
         android:text="Bitmap Activity"/>
     <Button
-        android:id="@+id/put_your_id_here"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="Sanek, nazvnie sam pomenyay i id toje :)"/>
+        android:text="Image Pick"/>
 </LinearLayout>

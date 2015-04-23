@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.boshetoonmai.secretgame" >
 
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +21,11 @@
         <activity
             android:name=".BitmapActivity"
             android:label="@string/title_activity_bitmap" >
+        </activity>
+        <activity
+            android:name=".imagePick"
+            android:label="@string/title_activity_imagePick">
+
         </activity>
     </application>
 
